@@ -2,6 +2,11 @@ package ru.papont.guziv.part1;
 
 public class Main {
     public static void main(String[] args) {
+        new MyThread().start();
+        new MyThread().start();
+        new MyThread().start();
+
+
         MyThread myThread = new MyThread();
         myThread.start();
 //        myThread.run();
@@ -21,7 +26,7 @@ class MyThread extends Thread {
             System.out.println("Thread name is - " + Thread.currentThread().getName() + " i = " + i);
 
         }
-        throw new RuntimeException();
+//        throw new RuntimeException();
     }
 }
 
